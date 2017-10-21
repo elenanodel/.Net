@@ -10,18 +10,16 @@ namespace HW_1
     {
         static void MinValue (int a, int b, int c)
         {
-                if (a < b && a < c)
-                {
-                    Console.WriteLine("Min Value is: {0}", a);
-                }
-                if (b < a && b < c)
-                {
-                    Console.WriteLine("Min Value is: {0}", b);
-                }
-                if (c < a && c < b)
-                {
-                    Console.WriteLine("Min Value is: {0}", c);
-                }
+            int min = a;
+            if (min > b)
+            {
+                min = b;
+            }
+            if (min > c)
+            {
+                min = c;
+            }
+            Console.WriteLine("Min Value is: {0}", min);
         }
 
         static void MaxValue (int a, int b)
